@@ -3,15 +3,22 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
 
     <title>DHA Lab | Digital Health Analytics Lab</title>
 
-    <meta name="description"
-          content="Digital Health Analytics Lab at National Yang Ming Chiao Tung University. We study digital biomarkers, wearable sensing, human movement, and artificial intelligence for health.">
+    <meta
+        name="description"
+        content="Digital Health Analytics Lab at National Yang Ming Chiao Tung University. Research in digital biomarkers, wearable sensing, human movement, and artificial intelligence for health."
+    >
 
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style.css?v=3">
 </head>
+
 
 <body>
 
@@ -23,21 +30,46 @@
 
     <div class="header-inner">
 
+        <!-- BRAND -->
+
         <a class="brand" href="index.html">
-            <span class="brand-mark">DHA</span>
+
+            <span class="brand-mark">
+                DHA
+            </span>
 
             <span class="brand-name">
                 Digital Health<br>
                 Analytics Lab
             </span>
+
         </a>
 
+
+        <!-- NAVIGATION -->
+
         <nav class="main-nav" aria-label="Main navigation">
-            <a href="#research">Research</a>
-            <a href="#news">News</a>
-            <a href="#people">People</a>
-            <a href="publications.html">Publications</a>
-            <a href="#join">Join</a>
+
+            <a href="#research">
+                Research
+            </a>
+
+            <a href="people.html">
+                People
+            </a>
+
+            <a href="publications.html">
+                Publications
+            </a>
+
+            <a href="#news">
+                News
+            </a>
+
+            <a href="#join">
+                Join
+            </a>
+
         </nav>
 
     </div>
@@ -45,17 +77,23 @@
 </header>
 
 
+
 <main>
 
+
 <!-- =========================================================
-     HERO
+     HERO INTRO
 ========================================================= -->
 
 <section class="hero">
 
     <div class="hero-inner">
 
+
         <div class="hero-top">
+
+
+            <!-- HERO TITLE -->
 
             <div class="hero-title">
 
@@ -70,6 +108,8 @@
 
             </div>
 
+
+            <!-- HERO DESCRIPTION -->
 
             <div class="hero-intro">
 
@@ -86,23 +126,189 @@
 
             </div>
 
+
         </div>
 
 
-        <!--
-        Replace this placeholder with a real lab image later:
 
-        <img
-            class="hero-image"
-            src="images/hero.jpg"
-            alt="Digital Health Analytics Lab research">
-        -->
+        <!-- =================================================
+             HERO CAROUSEL
+        ================================================== -->
 
-        <div class="hero-image-wrapper">
-            <img
-                src="images/hero.png"
-                alt="Wearable sensing and human movement research at DHA Lab"
-                class="hero-image">
+        <div
+            class="hero-carousel"
+            aria-label="DHA Lab research highlights"
+        >
+
+
+            <!-- =============================================
+                 SLIDE 1
+                 HUMAN MOVEMENT
+            ============================================== -->
+
+            <article class="hero-slide active">
+
+                <img
+                    src="images/hero-movement.jpg"
+                    alt="Human movement and gait analysis research"
+                    class="hero-slide-image"
+                >
+
+                <div class="hero-overlay"></div>
+
+
+                <div class="hero-slide-content">
+
+                    <p class="hero-slide-number">
+                        01 / 03
+                    </p>
+
+                    <h2>
+                        Human Movement<br>
+                        &amp; Mobility
+                    </h2>
+
+                    <p>
+                        Measuring gait and physical function
+                        across laboratory, clinical, and
+                        real-world environments.
+                    </p>
+
+                </div>
+
+            </article>
+
+
+
+            <!-- =============================================
+                 SLIDE 2
+                 DIGITAL BIOMARKERS
+            ============================================== -->
+
+            <article class="hero-slide">
+
+                <img
+                    src="images/hero-biomarkers.jpg"
+                    alt="Digital biomarkers and wearable sensing"
+                    class="hero-slide-image"
+                >
+
+                <div class="hero-overlay"></div>
+
+
+                <div class="hero-slide-content">
+
+                    <p class="hero-slide-number">
+                        02 / 03
+                    </p>
+
+                    <h2>
+                        Digital Biomarkers<br>
+                        &amp; Wearable Sensing
+                    </h2>
+
+                    <p>
+                        Transforming wearable and mobile sensor
+                        data into meaningful measures of health
+                        and everyday function.
+                    </p>
+
+                </div>
+
+            </article>
+
+
+
+            <!-- =============================================
+                 SLIDE 3
+                 AI FOR HEALTH
+            ============================================== -->
+
+            <article class="hero-slide">
+
+                <img
+                    src="images/hero-ai.jpg"
+                    alt="Artificial intelligence for health research"
+                    class="hero-slide-image"
+                >
+
+                <div class="hero-overlay"></div>
+
+
+                <div class="hero-slide-content">
+
+                    <p class="hero-slide-number">
+                        03 / 03
+                    </p>
+
+                    <h2>
+                        AI for<br>
+                        Health
+                    </h2>
+
+                    <p>
+                        Developing computational methods for
+                        physiological signals, human movement,
+                        and longitudinal health data.
+                    </p>
+
+                </div>
+
+            </article>
+
+
+
+            <!-- =============================================
+                 CAROUSEL CONTROLS
+            ============================================== -->
+
+            <button
+                class="carousel-arrow carousel-prev"
+                type="button"
+                aria-label="Previous slide"
+            >
+                ←
+            </button>
+
+
+            <button
+                class="carousel-arrow carousel-next"
+                type="button"
+                aria-label="Next slide"
+            >
+                →
+            </button>
+
+
+
+            <!-- DOTS -->
+
+            <div class="carousel-dots">
+
+                <button
+                    class="carousel-dot active"
+                    type="button"
+                    aria-label="Show slide 1"
+                    data-slide="0"
+                ></button>
+
+                <button
+                    class="carousel-dot"
+                    type="button"
+                    aria-label="Show slide 2"
+                    data-slide="1"
+                ></button>
+
+                <button
+                    class="carousel-dot"
+                    type="button"
+                    aria-label="Show slide 3"
+                    data-slide="2"
+                ></button>
+
+            </div>
+
+
         </div>
 
     </div>
@@ -110,13 +316,20 @@
 </section>
 
 
+
 <!-- =========================================================
      RESEARCH
 ========================================================= -->
 
-<section class="section research" id="research">
+<section
+    class="section research"
+    id="research"
+>
 
     <div class="section-inner">
+
+
+        <!-- SECTION TITLE -->
 
         <div class="section-intro">
 
@@ -132,72 +345,114 @@
         </div>
 
 
+
+        <!-- RESEARCH GRID -->
+
         <div class="research-list">
+
+
+            <!-- DIGITAL BIOMARKERS -->
 
             <article class="research-item">
 
-                <span class="research-number">01</span>
+                <span class="research-number">
+                    01
+                </span>
 
                 <div>
-                    <h3>Digital Biomarkers</h3>
+
+                    <h3>
+                        Digital Biomarkers
+                    </h3>
 
                     <p>
                         Objective and clinically meaningful measures
                         of health and physical function derived from
                         real-world sensor data.
                     </p>
+
                 </div>
 
             </article>
 
 
+
+            <!-- WEARABLE SENSING -->
+
             <article class="research-item">
 
-                <span class="research-number">02</span>
+                <span class="research-number">
+                    02
+                </span>
 
                 <div>
-                    <h3>Wearable Sensing</h3>
+
+                    <h3>
+                        Wearable Sensing
+                    </h3>
 
                     <p>
-                        Wearable and mobile technologies for capturing
-                        movement, physiology, and everyday human behavior.
+                        Wearable and mobile technologies for
+                        capturing movement, physiology, and
+                        everyday human behavior.
                     </p>
+
                 </div>
 
             </article>
 
 
+
+            <!-- HUMAN MOVEMENT -->
+
             <article class="research-item">
 
-                <span class="research-number">03</span>
+                <span class="research-number">
+                    03
+                </span>
 
                 <div>
-                    <h3>Human Movement &amp; Mobility</h3>
+
+                    <h3>
+                        Human Movement &amp; Mobility
+                    </h3>
 
                     <p>
-                        Quantifying gait, mobility, and physical function
-                        across laboratory, clinical, and real-world
-                        environments.
+                        Quantifying gait, mobility, and physical
+                        function across laboratory, clinical,
+                        and real-world environments.
                     </p>
+
                 </div>
 
             </article>
 
 
+
+            <!-- AI -->
+
             <article class="research-item">
 
-                <span class="research-number">04</span>
+                <span class="research-number">
+                    04
+                </span>
 
                 <div>
-                    <h3>AI for Health</h3>
+
+                    <h3>
+                        AI for Health
+                    </h3>
 
                     <p>
                         Machine learning for physiological signals,
-                        multimodal sensing, and longitudinal health data.
+                        multimodal sensing, and longitudinal
+                        health data.
                     </p>
+
                 </div>
 
             </article>
+
 
         </div>
 
@@ -206,38 +461,61 @@
 </section>
 
 
+
 <!-- =========================================================
-     NEWS
+     LATEST NEWS
 ========================================================= -->
 
-<section class="section news" id="news">
+<section
+    class="section news"
+    id="news"
+>
 
     <div class="section-inner">
+
+
+        <!-- NEWS HEADER -->
 
         <div class="section-header">
 
             <div>
+
                 <p class="section-label">
                     02 / LATEST NEWS
                 </p>
 
-                <h2>What's happening at DHA.</h2>
+                <h2>
+                    What's happening<br>
+                    at DHA.
+                </h2>
+
             </div>
 
-            <a class="section-link" href="#">
+
+            <a
+                class="section-link"
+                href="news.html"
+            >
                 All news ↗
             </a>
 
         </div>
 
 
+
+        <!-- NEWS LIST -->
+
         <div class="news-list">
+
+
+            <!-- NEWS ITEM -->
 
             <article class="news-item">
 
                 <time datetime="2026-09">
                     SEP 2026
                 </time>
+
 
                 <div class="news-content">
 
@@ -246,20 +524,25 @@
                     </h3>
 
                     <p>
-                        DHA Lab begins its journey in the Department of
-                        Biomedical Engineering at National Yang Ming
+                        DHA Lab begins its journey in the Department
+                        of Biomedical Engineering at National Yang Ming
                         Chiao Tung University.
                     </p>
 
                 </div>
 
-                <span class="news-arrow">↗</span>
+
+                <span class="news-arrow">
+                    ↗
+                </span>
 
             </article>
 
 
+
             <!--
-            Example for future news:
+            ================================================
+            COPY THIS BLOCK WHEN ADDING FUTURE NEWS
 
             <article class="news-item">
 
@@ -270,19 +553,24 @@
                 <div class="news-content">
 
                     <h3>
-                        Your news title
+                        News title
                     </h3>
 
                     <p>
-                        Short description.
+                        Short description of the news.
                     </p>
 
                 </div>
 
-                <span class="news-arrow">↗</span>
+                <span class="news-arrow">
+                    ↗
+                </span>
 
             </article>
+
+            ================================================
             -->
+
 
         </div>
 
@@ -291,100 +579,32 @@
 </section>
 
 
-<!-- =========================================================
-     PEOPLE
-========================================================= -->
-
-<section class="section people" id="people">
-
-    <div class="section-inner">
-
-        <div class="section-intro people-heading">
-
-            <p class="section-label">
-                03 / PEOPLE
-            </p>
-
-            <h2>
-                People behind<br>
-                the research.
-            </h2>
-
-        </div>
-
-
-        <div class="pi-layout">
-
-            <!--
-            Replace this placeholder later:
-
-            <img
-                class="pi-photo"
-                src="images/kai-chun-liu.jpg"
-                alt="Kai-Chun Liu">
-            -->
-
-            <div class="pi-photo-placeholder">
-
-                <span>DHA</span>
-
-                <p>PI PHOTO</p>
-
-            </div>
-
-
-            <div class="pi-info">
-
-                <p class="person-role">
-                    PRINCIPAL INVESTIGATOR
-                </p>
-
-                <h3>Kai-Chun Liu, Ph.D.</h3>
-
-                <p class="person-position">
-                    Assistant Professor<br>
-                    Department of Biomedical Engineering<br>
-                    National Yang Ming Chiao Tung University
-                </p>
-
-                <p class="person-description">
-                    His research focuses on digital biomarkers,
-                    wearable sensing, machine learning, and
-                    real-world assessment of human health and
-                    physical function.
-                </p>
-
-                <a class="text-link" href="people.html">
-                    View profile ↗
-                </a>
-
-            </div>
-
-        </div>
-
-    </div>
-
-</section>
-
 
 <!-- =========================================================
-     JOIN
+     JOIN DHA LAB
 ========================================================= -->
 
-<section class="join" id="join">
+<section
+    class="join"
+    id="join"
+>
 
     <div class="join-inner">
+
 
         <p class="join-label">
             JOIN DHA LAB
         </p>
 
+
         <div class="join-grid">
+
 
             <h2>
                 Curious about<br>
                 digital health?
             </h2>
+
 
             <div class="join-copy">
 
@@ -394,12 +614,19 @@
                     movement, and artificial intelligence for health.
                 </p>
 
-                <a href="mailto:YOUR_EMAIL@nycu.edu.tw">
-                    Get in touch
-                    <span>↗</span>
+
+                <a href="join.html">
+
+                    Explore opportunities
+
+                    <span>
+                        ↗
+                    </span>
+
                 </a>
 
             </div>
+
 
         </div>
 
@@ -407,7 +634,9 @@
 
 </section>
 
+
 </main>
+
 
 
 <!-- =========================================================
@@ -417,6 +646,9 @@
 <footer class="site-footer">
 
     <div class="footer-inner">
+
+
+        <!-- LAB -->
 
         <div class="footer-brand">
 
@@ -431,6 +663,9 @@
 
         </div>
 
+
+
+        <!-- AFFILIATION -->
 
         <div class="footer-affiliation">
 
@@ -449,9 +684,14 @@
         </div>
 
 
+
+        <!-- COPYRIGHT -->
+
         <div class="footer-meta">
 
-            <p>© 2026 DHA Lab</p>
+            <p>
+                © 2026 DHA Lab
+            </p>
 
             <a href="#">
                 Back to top ↑
@@ -459,10 +699,221 @@
 
         </div>
 
+
     </div>
 
 </footer>
 
 
+
+<!-- =========================================================
+     HERO CAROUSEL JAVASCRIPT
+========================================================= -->
+
+<script>
+
+document.addEventListener("DOMContentLoaded", function () {
+
+    const slides =
+        document.querySelectorAll(".hero-slide");
+
+    const dots =
+        document.querySelectorAll(".carousel-dot");
+
+    const previousButton =
+        document.querySelector(".carousel-prev");
+
+    const nextButton =
+        document.querySelector(".carousel-next");
+
+
+    let currentSlide = 0;
+
+    let autoplayTimer;
+
+
+
+    /* -----------------------------------------
+       SHOW SLIDE
+    ----------------------------------------- */
+
+    function showSlide(index) {
+
+        if (index >= slides.length) {
+            index = 0;
+        }
+
+        if (index < 0) {
+            index = slides.length - 1;
+        }
+
+
+        slides.forEach(function (slide) {
+            slide.classList.remove("active");
+        });
+
+
+        dots.forEach(function (dot) {
+            dot.classList.remove("active");
+        });
+
+
+        slides[index].classList.add("active");
+
+        dots[index].classList.add("active");
+
+        currentSlide = index;
+
+    }
+
+
+
+    /* -----------------------------------------
+       NEXT
+    ----------------------------------------- */
+
+    function nextSlide() {
+
+        showSlide(currentSlide + 1);
+
+    }
+
+
+
+    /* -----------------------------------------
+       PREVIOUS
+    ----------------------------------------- */
+
+    function previousSlide() {
+
+        showSlide(currentSlide - 1);
+
+    }
+
+
+
+    /* -----------------------------------------
+       AUTOPLAY
+    ----------------------------------------- */
+
+    function startAutoplay() {
+
+        autoplayTimer = setInterval(
+            nextSlide,
+            6000
+        );
+
+    }
+
+
+
+    function resetAutoplay() {
+
+        clearInterval(autoplayTimer);
+
+        startAutoplay();
+
+    }
+
+
+
+    /* -----------------------------------------
+       ARROWS
+    ----------------------------------------- */
+
+    nextButton.addEventListener(
+        "click",
+        function () {
+
+            nextSlide();
+
+            resetAutoplay();
+
+        }
+    );
+
+
+    previousButton.addEventListener(
+        "click",
+        function () {
+
+            previousSlide();
+
+            resetAutoplay();
+
+        }
+    );
+
+
+
+    /* -----------------------------------------
+       DOT NAVIGATION
+    ----------------------------------------- */
+
+    dots.forEach(function (dot) {
+
+        dot.addEventListener(
+            "click",
+            function () {
+
+                const index =
+                    Number(
+                        this.dataset.slide
+                    );
+
+                showSlide(index);
+
+                resetAutoplay();
+
+            }
+        );
+
+    });
+
+
+
+    /* -----------------------------------------
+       PAUSE WHEN USER HOVERS
+    ----------------------------------------- */
+
+    const carousel =
+        document.querySelector(".hero-carousel");
+
+
+    carousel.addEventListener(
+        "mouseenter",
+        function () {
+
+            clearInterval(autoplayTimer);
+
+        }
+    );
+
+
+    carousel.addEventListener(
+        "mouseleave",
+        function () {
+
+            startAutoplay();
+
+        }
+    );
+
+
+
+    /* -----------------------------------------
+       START
+    ----------------------------------------- */
+
+    showSlide(0);
+
+    startAutoplay();
+
+});
+
+</script>
+
+
 </body>
+
 </html>
