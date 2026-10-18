@@ -1455,15 +1455,24 @@ img {
 
 /* RESPONSIVE */
 
+/* Tablet */
 @media (max-width: 900px) {
-  .pi-layout {
-    grid-template-columns: 1fr 1.2fr;
-    gap: 35px;
-  }
+    .pi-layout {
+        grid-template-columns: minmax(0, 250px) minmax(0, 1fr);
+        gap: 35px;
+    }
+}
 
-  .members-grid {
-    gap: 20px;
-  }
+/* Mobile */
+@media (max-width: 650px) {
+    .pi-layout {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+
+    .pi-photo {
+        max-width: 240px;
+    }
 }
 
 @media (max-width: 650px) {
