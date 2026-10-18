@@ -1,4 +1,4 @@
-/* =========================================================
+ㄍ/* =========================================================
    DHA LAB
    Digital Health Analytics Lab
 ========================================================= */
@@ -1323,15 +1323,15 @@ img {
 
 .pi-layout {
   display: grid;
-  grid-template-columns: minmax(0, 0.85fr) minmax(0, 1.15fr);
-  gap: 75px;
-  align-items: center;
+  grid-template-columns: 220px minmax(0, 1fr);
+  gap: 55px;
+  align-items: start;
 }
 
 .pi-photo {
     width: 100%;
+    max-width: 220px;
     aspect-ratio: auto;
-    max-width: 320px;
     overflow: hidden;
 }
 
@@ -1457,25 +1457,6 @@ img {
 
 /* RESPONSIVE */
 
-/* Tablet */
-@media (max-width: 900px) {
-    .pi-layout {
-        grid-template-columns: minmax(0, 250px) minmax(0, 1fr);
-        gap: 35px;
-    }
-}
-
-/* Mobile */
-@media (max-width: 650px) {
-    .pi-layout {
-        grid-template-columns: 1fr;
-        gap: 30px;
-    }
-
-    .pi-photo {
-        max-width: 240px;
-    }
-}
 
 @media (max-width: 650px) {
   .people-heading {
@@ -1492,7 +1473,7 @@ img {
   }
 
   .pi-photo {
-    max-width: 440px;
+    max-width: 180px;
   }
 
   .members-grid {
