@@ -1324,7 +1324,7 @@ img {
 .pi-layout {
   display: grid;
   grid-template-columns: 220px minmax(0, 1fr);
-  gap: 55px;
+  gap: 35px;
   align-items: start;
 }
 
@@ -1469,7 +1469,7 @@ img {
 
   .pi-layout {
     grid-template-columns: 1fr;
-    gap: 30px;
+    gap: 35px;
   }
 
   .pi-photo {
