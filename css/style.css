@@ -1322,15 +1322,15 @@ img {
 /* PI */
 
 .pi-layout {
-  display: grid;
-  grid-template-columns: 220px minmax(0, 1fr);
-  gap: 35px;
-  align-items: start;
+    display: grid;
+    grid-template-columns: 220px minmax(0, 1fr);
+    column-gap: 50px;
+    align-items: center;
 }
 
 .pi-photo {
-    width: 100%;
-    max-width: 220px;
+    width: 220px;
+    max-width: 100%;
     aspect-ratio: auto;
     overflow: hidden;
 }
