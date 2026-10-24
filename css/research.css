@@ -78,3 +78,99 @@
 .research-page .pubs strong a:hover{color:#105260;text-decoration:underline}
 .research-page .pubs strong a:focus-visible{outline:2px solid #247e80;outline-offset:3px;border-radius:2px}
 .research-page .pubs .paper-arrow{font-size:1.1em;white-space:nowrap}
+
+/* ---------------------------------------------------------
+   RESEARCH VISUAL ALIGNMENT (matches the People page)
+   This page keeps its research content and chapter layout,
+   but adopts the same shared palette and typography.
+   --------------------------------------------------------- */
+.research-page {
+  --ink: #171918;
+  --muted: #696d69;
+  --teal: #183d38;
+  --accent: #183d38;
+  --line: #d6d5cf;
+  --paper: #f4f2ec;
+  --soft: #eaece7;
+  --max: 1380px;
+  background: var(--paper);
+  color: var(--ink);
+}
+.research-page .wrap { width:min(calc(100% - 80px),var(--max)); }
+.research-page .hero { padding:90px 0 0; }
+.research-page .hero-top { align-items:end; }
+.research-page .eyebrow {color:var(--gray);font-weight:600;letter-spacing:.15em;margin:0 0 22px;}
+.research-page .eyebrow-line {background:var(--line);}
+.research-page .hero h1 {
+  font-size:clamp(65px,9vw,130px);font-weight:400;line-height:1;
+  letter-spacing:-.07em;margin:0;
+}
+.research-page .period { color:var(--teal); }
+.research-page .hero-tagline {font-weight:400;font-size:clamp(17px,2vw,23px);color:var(--gray);letter-spacing:-.025em;}
+.research-page em {color:var(--teal);}
+.research-page .hero-intro {color:var(--gray);font-size:17px;max-width:900px;line-height:1.8;margin:30px 0 42px;}
+.research-page .hero-intro strong {color:var(--ink);}
+.research-page .overview-figure img,.research-page .research-figure img {background:#e6e9e4;border-radius:0;}
+.research-page .overview-figure figcaption,.research-page .research-figure figcaption{color:var(--gray);}
+.research-page .chapter-nav-wrap {background:rgba(244,242,236,.97);border-color:var(--line);}
+.research-page .chapter-title {color:var(--gray);font-weight:600;}
+.research-page .chapter-nav a {font-weight:600;color:var(--teal);}
+.research-page .chapter-nav a span {color:var(--ink);font-weight:400;}
+.research-page .areas-intro {padding:95px 0 80px;}
+.research-page .areas-intro h2 {font-weight:400;}
+.research-page .areas-intro>p {color:var(--gray);}
+.research-page .research-section {border-color:var(--line);padding-top:26px;padding-bottom:95px;}
+.research-page .section-num {color:var(--gray);font-weight:600;font-size:11px;letter-spacing:.14em;}
+.research-page .section-header h2 {font-weight:400;color:var(--ink);}
+.research-page .section-deck {color:var(--gray);}
+.research-page .amp {color:var(--teal);}
+.research-page .research-detail {margin-top:40px;}
+.research-page .prose p {color:var(--gray);line-height:1.85;}
+.research-page .prose strong {color:var(--ink);}
+.research-page .keywords span {background:transparent;border-color:var(--line);color:var(--teal);font-weight:500;}
+.research-page .pubs {border-color:var(--line);}
+.research-page .pubs h3 {color:var(--teal);font-weight:600;}
+.research-page .pubs li:before {color:var(--teal);}
+.research-page .pubs strong,.research-page .pubs strong a {color:var(--ink);}
+.research-page .pubs li span {color:var(--gray);}
+.research-page .pubs strong a:hover {color:var(--teal);}
+.research-page .closing-kicker {color:var(--gray);}
+.research-page .closing h2 {font-weight:400;}
+.research-page .text-link {color:var(--teal);border-color:var(--teal);}
+@media(max-width:950px){.research-page .research-detail{margin-left:0;}}
+@media(max-width:700px){
+  .research-page .wrap{width:calc(100% - 32px);}
+  .research-page .hero{padding-top:60px;}
+  .research-page .hero-tagline{margin-top:22px;}
+  .research-page .hero-intro{font-size:15px;line-height:1.75;}
+  .research-page .areas-intro{padding:70px 0 55px;}
+  .research-page .research-section{padding-bottom:75px;}
+  .research-page .chapter-nav{gap:16px;}
+}
+
+
+/* Accessible skip link: visually hidden except on keyboard focus. */
+.skip-link {
+  position: absolute;
+  left: -9999px;
+  top: auto;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  white-space: nowrap;
+}
+.skip-link:focus,
+.skip-link:focus-visible {
+  position: fixed;
+  left: 16px;
+  top: 16px;
+  width: auto;
+  height: auto;
+  padding: 12px 18px;
+  overflow: visible;
+  background: #183d38;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 4px;
+  z-index: 9999;
+}
